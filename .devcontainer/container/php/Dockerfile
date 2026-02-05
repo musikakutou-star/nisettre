@@ -21,12 +21,6 @@ RUN apt-get update && apt-get install -y \
     git \
     && docker-php-ext-install pdo_mysql mbstring bcmath gd
 
-    # mysql クライアントをインストール
-RUN apt-get update \
-    && apt-get install -y default-mysql-client \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
-    
 # Composer をインストール
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 

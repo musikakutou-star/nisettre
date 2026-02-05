@@ -7,9 +7,10 @@ use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
-    public function users () {
+    public function users()
+    {
         $users = DB::table('users')->get()->toArray();
-        dd($users);
+        //dd($users);
 
         return view('welcome')->with("users", $users);
     }
