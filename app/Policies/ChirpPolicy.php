@@ -35,8 +35,6 @@ class ChirpPolicy
 
     public function update(User $user, Chirp $chirp)
     {
-        $this->authorize('update', $chirp);
-        // ... rest of method
         return $chirp->user()->is($user);
     }
 
