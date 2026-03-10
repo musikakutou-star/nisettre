@@ -28,15 +28,12 @@ body:
       description: 必要なものにチェックを入れてください
       options:
         - label: Controller 作成
+        - label: Validation 実装済みであること
         - label: Model 作成
         - label: View (Blade) 作成
         - label: Migration 作成
         - label: Route 追加 (routes/web.php)
-        - label: Request クラス作成 (FormRequest)
-        - label: Validation 追加
-        - label: Service / Repository 作成
         - label: Seeder / Factory 作成
-        - label: Test 作成 (Feature / Unit)
 
   - type: textarea
     id: notes
