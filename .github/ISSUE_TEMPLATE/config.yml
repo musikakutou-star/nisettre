@@ -1,6 +1,7 @@
 name: 💡 新規実装
 description: 機能追加のテンプレート
 labels: ["enhancement"]
+blank_issues_enabled: false
 
 body:
   - type: markdown
