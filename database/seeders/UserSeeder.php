@@ -6,7 +6,7 @@ use App\Models\User;
 use App\Models\Chirp;
 use Illuminate\Database\Seeder;
 
-class ChirpSeeder extends Seeder
+class RecipeSeeder extends Seeder
 {
     public function run(): void
     {

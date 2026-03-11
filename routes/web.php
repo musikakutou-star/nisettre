@@ -2,11 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ChirpController;
+use App\Http\Controllers\RecipeController;
 use App\Http\Controllers\Auth\Register;
 use App\Http\Controllers\Auth\Login;
 use App\Http\Controllers\Auth\Logout;
 
-Route::get('/', [ChirpController::class, 'index']);
+Route::get('/', [RecipeController::class, 'index']);
 // Protected routes
 Route::middleware('auth')->group(function () {
     Route::post('/chirps', [ChirpController::class, 'store']);
