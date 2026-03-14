@@ -26,5 +26,10 @@ class RecipeSeeder extends Seeder
             'cooking' => '切る、揚げる',
             'memo' => '揚げたてに塩を振る',
         ]);
+        Recipe::create([
+            'name' => '肉じゃが',
+            'cooking' => '切る、炒める、煮る',
+            'memo' => '混ぜすぎない',
+        ]);
     }
 }
