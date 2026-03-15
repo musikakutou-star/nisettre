@@ -29,7 +29,7 @@ class RecipeSeeder extends Seeder
         Recipe::create([
             'name' => '肉じゃが',
             'cooking' => '切る、炒める、煮る',
-            'memo' => '混ぜすぎない',
+            'memo' => '混ぜすぎない、砂糖から入れる',
         ]);
     }
 }
