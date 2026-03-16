@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Chirp;
+use App\Models\Recipe;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
@@ -12,12 +13,12 @@ class RecipeController extends Controller
 
     public function index()
     {
-        $chirps = Chirp::with('user')
+        $recipes = Recipe::with('user')
             ->latest()
             ->take(50)  // Limit to 50 most recent chirps
             ->get();
 
-        return view('home', ['chirps' => $chirps]);
+        return view('home', ['recipes' => $recipes]);
     }
 
     /**
