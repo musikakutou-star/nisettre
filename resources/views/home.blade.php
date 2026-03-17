@@ -40,7 +40,7 @@
 </div>
         <!-- Feed -->
         <div class="space-y-4 mt-8">
-            @forelse ($recipes as $Recipe)
+            @forelse ($recipes as $recipe)
               <x-recipe :recipe="$recipe" />
             @empty
                 <div class="hero py-12">
