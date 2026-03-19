@@ -49,8 +49,7 @@
                         </div>
                     @endcan
                 </div>
-                <p class="mt-1">{{ $recipe->name }}</p>
-                <p class="mt-1">{{ $recipe->memo }}</p>
+                <p class="mt-1">{{ $recipe->name }}</p> 
             </div>
         </div>
     </div>
